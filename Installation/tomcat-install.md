@@ -70,7 +70,7 @@
 
     # Start Tomcat using the soft link
     starttomcat
-    ```
+```
 
 ## **<span style="color:green">Access Tomcat</span>**
 
