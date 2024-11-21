@@ -9,6 +9,7 @@ For further assistance or inquiries:
 - **Email:** [nditafonhysonn@gmail.com](mailto:nditafonhysonn@gmail.com)
 - **GitHub**: [https://github.com/Hyson-Wayne](https://github.com/Hyson-Wayne)
 - **LinkedIn**: [https://www.linkedin.com/in/nditafon-hyson-762a6623b/](https://www.linkedin.com/in/nditafon-hyson-762a6623b/)
+---
 
 ### **<span style="color:green">Prerequisites</span>**
 - An **active AWS account**
