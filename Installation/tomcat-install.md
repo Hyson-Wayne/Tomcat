@@ -44,17 +44,17 @@ For further assistance or inquiries, click the buttons below:
 
 **Download and extract Apache Tomcat:**
 ```bash
-    # Download Apache Tomcat version 10
-    sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.33/bin/apache-tomcat-10.1.33.zip
+    # Download Apache Tomcat version 9.0.97
+    sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip
 
     # Extract the Tomcat zip file
-    sudo unzip apache-tomcat-10.1.33.zip
+    sudo unzip apache-tomcat-9.0.97.zip
 
     # Clean up by removing the zip file
-    sudo rm -rf apache-tomcat-10.1.33.zip
+    sudo rm -rf apache-tomcat-9.0.97.zip
 
     # Rename the directory for simplicity
-    sudo mv apache-tomcat-10.1.33 tomcat10
+    sudo mv apache-tomcat-9.0.97 tomcat10
 ```
 
 ## **<span style="color:green">Step 3: Set Up Tomcat Directory and Permissions</span>**
@@ -62,10 +62,10 @@ For further assistance or inquiries, click the buttons below:
 **Assign permissions to the Tomcat directory:**
 ```bash
     # Set executable permissions for the Tomcat home directory
-    sudo chmod 777 -R /opt/tomcat10
+    sudo chmod 777 -R /opt/tomcat9
 
     # Change the ownership to 'ec2-user'
-    sudo chown ec2-user -R /opt/tomcat10
+    sudo chown ec2-user -R /opt/tomcat9
 ```
 
 ## **<span style="color:green">Step 4: Start Tomcat and Create Soft Links</span>**
@@ -73,11 +73,11 @@ For further assistance or inquiries, click the buttons below:
 **Start the Tomcat server and create soft links:**
 ```bash
     # Start the Tomcat server
-    sh /opt/tomcat10/bin/startup.sh
+    sh /opt/tomcat9/bin/startup.sh
 
     # Create symbolic links for easier management
-    sudo ln -s /opt/tomcat10/bin/startup.sh /usr/bin/starttomcat
-    sudo ln -s /opt/tomcat10/bin/shutdown.sh /usr/bin/stoptomcat
+    sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
+    sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
 
     # Switch back to the ec2-user
     sudo su - ec2-user
@@ -95,7 +95,7 @@ For further assistance or inquiries, click the buttons below:
 ### **Change Port Number**
 **Edit the `server.xml` file to change the port:**
 ```bash
-    sudo vi /opt/tomcat10/conf/server.xml
+    sudo vi /opt/tomcat9/conf/server.xml
 ```
 - Locate the `<Connector>` tag and change the port from `8080` to `8177`.
 
@@ -108,7 +108,7 @@ For further assistance or inquiries, click the buttons below:
 ### **Enable External Access to the Tomcat Manager**
 **Edit the `context.xml` file to allow external access:**
 ```bash
-    sudo vi /opt/tomcat10/webapps/manager/META-INF/context.xml
+    sudo vi /opt/tomcat9/webapps/manager/META-INF/context.xml
 ```
 - Comment out the following line to enable access:
 ```xml
@@ -121,12 +121,12 @@ For further assistance or inquiries, click the buttons below:
 ### **Add Users to Tomcat**
 **Edit `tomcat-users.xml` to add user credentials:**
 ```bash
-    sudo vi /opt/tomcat10/conf/tomcat-users.xml
+    sudo vi /opt/tomcat9/conf/tomcat-users.xml
 ```
 - Add the following user configuration:
 ```xml
     <user username="YourName" password="PassWord" roles="manager-gui,admin-gui"/>
-    <user username="admin" password="admin123" roles="manager-gui,admin-gui,manager-script"/>
+    <user username="hyson" password="hyson123" roles="manager-gui,admin-gui,manager-script"/>
 ```
 
 This completes the setup and configuration for Apache Tomcat on your AWS EC2 Red Hat instance.
