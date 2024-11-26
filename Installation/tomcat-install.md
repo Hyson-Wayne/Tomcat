@@ -54,7 +54,7 @@ For further assistance or inquiries, click the buttons below:
     sudo rm -rf apache-tomcat-9.0.97.zip
 
     # Rename the directory for simplicity
-    sudo mv apache-tomcat-9.0.97 tomcat10
+    sudo mv apache-tomcat-9.0.97 tomcat9
 ```
 
 ## **<span style="color:green">Step 3: Set Up Tomcat Directory and Permissions</span>**
