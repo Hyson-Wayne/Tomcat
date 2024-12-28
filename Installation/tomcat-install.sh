@@ -8,10 +8,10 @@ cd /opt
 sudo yum install git wget unzip java-17-openjdk-devel -y
 
 # Step 2: Download and Extract Tomcat
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip
-sudo unzip apache-tomcat-9.0.97.zip
-sudo rm -rf apache-tomcat-9.0.97.zip
-sudo mv apache-tomcat-9.0.97 tomcat9
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.zip
+sudo unzip apache-tomcat-9.0.98.zip
+sudo rm -rf apache-tomcat-9.0.98.zip
+sudo mv apache-tomcat-9.0.98 tomcat9
 
 # Step 3: Set Up Tomcat Directory and Permissions
 sudo chmod 777 -R /opt/tomcat9
