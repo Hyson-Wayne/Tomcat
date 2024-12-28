@@ -44,17 +44,17 @@ For further assistance or inquiries, click the buttons below:
 
 **Download and extract Apache Tomcat:**
 ```bash
-    # Download Apache Tomcat version 9.0.97
-    sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.zip
+    # Download Apache Tomcat version 9.0.98
+    sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.98.zip
 
     # Extract the Tomcat zip file
-    sudo unzip apache-tomcat-9.0.97.zip
+    sudo unzip apache-tomcat-9.0.98.zip
 
     # Clean up by removing the zip file
-    sudo rm -rf apache-tomcat-9.0.97.zip
+    sudo rm -rf apache-tomcat-9.0.98.zip
 
     # Rename the directory for simplicity
-    sudo mv apache-tomcat-9.0.97 tomcat9
+    sudo mv apache-tomcat-9.0.98 tomcat9
 ```
 
 ## **<span style="color:green">Step 3: Set Up Tomcat Directory and Permissions</span>**
