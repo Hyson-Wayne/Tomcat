@@ -45,7 +45,7 @@ For further assistance or inquiries, click the buttons below:
 **Download and extract Apache Tomcat:**
 ```bash
     # Download Apache Tomcat version 9.0.98
-    sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.98.zip
+    sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.98/bin/apache-tomcat-9.0.98.zip
 
     # Extract the Tomcat zip file
     sudo unzip apache-tomcat-9.0.98.zip
